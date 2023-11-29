@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dz7</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/script.js" defer></script>
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    </head>
+    <body>
+        <h1 class="mainPosText">Список</h1>
+        <div class="main">
+           
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary but" onclick="getAllCar()">Показать всё</button>
+        
+
+        
+        
+            <div class="createBlockInfoCar">
+                <div class="inCrBLInfCar">
+                    <label for="mark">Введите марку:</label>
+                    <input type="text" name="mark" id="mark"/>
+                </div>
+                <div class="inCrBLInfCar">
+                    <label for="number">Введите номер:</label>
+                    <input type="text" name="number" placeholder="ЦЦЦЦ-ББЦ" id="number"/>
+                </div>
+                <div class="inCrBLInfCar">
+                    <label for="color">Цвет:</label>
+                    <input type="text" name="color" id="color"/>
+                </div>
+                <div class="inCrBLInfCar">
+                    <label for="weight">Вес:</label>
+                    <input type="number" name="weight" id="weight"/>
+                </div>
+                <div class="inCrBLInfCar">
+                    <label for="age">Год выпуска:</label>
+                    <input type="number" name="age" id="age"/>
+                </div>
+                <div class="inCrBLInfCar">
+                    <label for="type">Выберите тип:</label>
+                    <select name="typeCar" id="type" >
+                        <option value="undefined"></option>
+                        <option value="electro">electro</option>
+                        <option value="hybrid">hybrid</option>
+                        <option value="petrol">petrol</option>
+                        <option value="diesel">diesel</option>
+                    </select>
+                </div>
+                <div class="inCrBLInfCar">
+                    <label for="offense">Кол-во наруш:</label>
+                    <input type="number" name="offense" id="offense"/>
+                </div>
+                <div class="inCrBLInfCar">
+                    <label for="fine">Кол-во штрафов:</label>
+                    <input type="number" name="fine" id="fine"/>
+                </div> 
+                <button type="button" class="btn btn-primary addCar" onclick="addCar()">Добавить</button>
+                <button type="button" class="btn btn-primary setCar" onclick="setCar()">Показать по критериям</button>
+                <button type="button" class="btn btn-primary delCar" onclick="delCar()">Удалить по заданному номеру</button>
+                </div>
+
+                <div class="putCar">
+                    <div class="putIn">
+                        <label for="num">Введите номер:</label>
+                            <input type="text" name="num" id="putNumber" placeholder="ЦЦЦЦ-ББЦ">
+                    </div>
+                    <div class="putIn">
+                        <label for="putSel">Что изменить:</label>
+                        <select name="putSel" name="putSel" id="putSel">
+                            <option value="offense">offense</option>
+                            <option value="fine">fine</option>
+                            <option value="color">color</option>
+                        </select>
+                    </div>
+                    <div class="putIn">
+                        <label for="of-fi">Впишите количество:</label>
+                            <input type="number" name="of-fi" id="of-fi">
+                    </div>
+                    <div class="putIn">
+                        <label for="col">Изменить цвет:</label>
+                            <input type="text" name="col" id="putColor">
+                    </div>
+                    <button type="button" class="btn btn-primary putCarBut" onclick="putCar()">Изменить данные</button>
+                </div>
+    </body>
+</html>
